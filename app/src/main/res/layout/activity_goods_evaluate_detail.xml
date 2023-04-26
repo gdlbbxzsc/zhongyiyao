@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_goods_evaluste_icon"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:src="@drawable/morentouxiang" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_goods_evaluste_name"
+                        style="@style/font_black_small2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="" />
+
+                    <RatingBar
+                        android:id="@+id/rating_goods_evaluste"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:numStars="5"
+                        android:rating="2.5" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_goods_evaluste_date"
+                    style="@style/font_gray6_small1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_goods_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="" />
+
+            <com.pbph.shoppingmall.myview.MyListView
+                android:id="@+id/lv_goods_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_iv_goods_evaluste_shop_name"
+                    style="@style/font_gray6_small2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="官方旗舰店" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_goods_evaluste_zhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/zhan"
+                    android:text="12"
+                    android:textColor="#f1bb47" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

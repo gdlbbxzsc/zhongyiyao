@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/font_black_normal2_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_pic"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_toRightOf="@id/iv_pic"
+        android:maxLines="2"
+        android:minLines="2" />
+
+    <RelativeLayout
+        android:id="@+id/ll_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_num"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:layout_toRightOf="@id/iv_pic">
+
+        <TextView
+            android:id="@+id/tv_not_use"
+            style="@style/font_red_large1_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="bottom"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/tv_price_tag"
+            style="@style/font_red_small3_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_not_use"
+            android:layout_toRightOf="@id/tv_not_use"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:text="￥" />
+
+        <TextView
+            android:id="@+id/tv_price_new"
+            style="@style/font_red_large1_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_not_use"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_toRightOf="@id/tv_price_tag"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:text="00.00" />
+
+        <TextView
+            android:id="@+id/iv_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_not_use"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@id/tv_price_new"
+            android:drawableRight="@drawable/ziying"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_num"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_pic"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_toRightOf="@id/iv_pic" />
+
+
+    <TextView
+        android:id="@+id/tv_go_shop"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_pic"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="进入店铺>" />
+</RelativeLayout>
+
+

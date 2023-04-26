@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/ll_logistics_line_top"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line_gray"
+
+            android:layout_width="1dp"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_logistics_line_bottom"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_logistics_info2"
+        android:layout_alignTop="@id/tv_logistics_img"
+        android:layout_marginTop="@dimen/dp_28"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line_gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/tv_logistics_img"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/logisticsdetail_img_level" />
+
+    <TextView
+        android:id="@+id/tv_gone"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_logistics_img"
+        android:layout_alignLeft="@id/tv_logistics_img"
+        android:layout_alignRight="@id/tv_logistics_img"
+        android:layout_alignTop="@id/tv_logistics_img"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/tv_logistics_info1"
+        style="@style/font_black_normal2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_gone"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_toRightOf="@id/tv_logistics_img"
+        android:gravity="left|center"
+        android:text="店铺名称" />
+
+    <TextView
+        android:id="@+id/tv_logistics_info2"
+        style="@style/font_gray6_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_logistics_info1"
+        android:layout_below="@id/tv_logistics_info1"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_6"
+        android:gravity="left|top"
+        android:minLines="2"
+        android:paddingBottom="@dimen/dp_20"
+        android:text="店铺名称" />
+</RelativeLayout>

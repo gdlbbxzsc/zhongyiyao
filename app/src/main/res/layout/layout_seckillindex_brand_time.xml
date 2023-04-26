@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="距结束:" />
+
+    <TextView  android:maxLength="2"
+        android:id="@+id/tv_hh"
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:gravity="center"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时" />
+
+    <TextView  android:maxLength="2"
+        android:id="@+id/tv_mm"
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:gravity="center"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分" />
+
+    <TextView  android:maxLength="2"
+        android:id="@+id/tv_ss"
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:gravity="center"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_red_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒" />
+</LinearLayout>
+

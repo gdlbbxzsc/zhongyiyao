@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/beijing"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_mine_photo"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_68"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@drawable/morentouxiang" />
+
+        <include
+            android:id="@+id/include_mine_state_login"
+            layout="@layout/layout_mine_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_toRightOf="@id/iv_mine_photo"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/include_mine_state_logout"
+            layout="@layout/layout_mine_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_toRightOf="@id/iv_mine_photo" />
+
+
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/titlebar_mine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/RelativeLayout" />
+
+    <include
+        layout="@layout/layout_mine_nums"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/RelativeLayout"
+        android:layout_marginBottom="@dimen/dp_3" />
+
+
+</RelativeLayout>

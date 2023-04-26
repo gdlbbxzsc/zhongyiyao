@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_wuliu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/line_d7"
+            android:dividerHeight="@dimen/dp_1"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            style="@style/font_black_normal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@null"
+            android:button="@drawable/couponmine_cb_btn_selector"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/dp_7"
+            android:text="全选" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_del"
+            style="@style/font_white_normal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dp_14"
+            android:paddingTop="@dimen/dp_14"
+            android:text="取消收藏" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_gwc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/smartRefreshLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_4"
+            android:scaleType="center"
+            android:src="@drawable/fudongenniu" />
+
+
+        <TextView
+            android:id="@+id/tv_gwc_num"
+            style="@style/font_red_small3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/browserecords_bg"
+            android:gravity="center"
+            android:minEms="1"
+            android:minHeight="@dimen/dp_24"
+            android:minWidth="@dimen/dp_24"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_4"
+            android:text="0" />
+    </FrameLayout>
+
+</RelativeLayout>

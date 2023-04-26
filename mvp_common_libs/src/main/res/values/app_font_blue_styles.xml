@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="font_blue_large1" parent="font_large1">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_blue_large2" parent="font_large2">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_blue_normal1" parent="font_normal1">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_blue_normal2" parent="font_normal2">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_blue_small1" parent="font_small1">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_blue_small2" parent="font_small2">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_blue_small3" parent="font_small3">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <!-- =====-->
+    <style name="font_blue_large1_bold" parent="font_blue_large1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_blue_large2_bold" parent="font_blue_large2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_blue_normal1_bold" parent="font_blue_normal1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_blue_normal2_bold" parent="font_blue_normal2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_blue_small1_bold" parent="font_blue_small1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_blue_small2_bold" parent="font_blue_small2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_blue_small3_bold" parent="font_blue_small3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

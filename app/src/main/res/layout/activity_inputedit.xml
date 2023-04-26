@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar_common1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_edit"
+            style="@style/font_black_small1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="请输入"
+            android:maxLines="2"
+            android:minLines="1"
+            android:paddingBottom="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_16" />
+
+        <ImageView
+            android:id="@+id/edt_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_6"
+            android:src="@drawable/shacnhu" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_toast"
+        style="@style/font_gray6_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8" />
+
+</LinearLayout>

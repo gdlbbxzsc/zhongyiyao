@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/is_shop_checked"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/shoppingcar_cb_selecter"
+            android:drawablePadding="@dimen/dp_10"
+            android:focusable="false"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_shop"
+            style="@style/font_black_small1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

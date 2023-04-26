@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_category_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/ms_bg" />
+
+    <include
+        layout="@layout/layout_seckillindex_category_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp_10" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_category_banner"
+        android:background="@drawable/seckillindex_category_item_bottom_bg"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_6">
+
+        <ImageView
+            android:id="@+id/iv_category_ad1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+        <ImageView
+            android:id="@+id/iv_category_ad2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+        <ImageView
+            android:id="@+id/iv_category_ad3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+    </LinearLayout>
+
+
+</RelativeLayout>

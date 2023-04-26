@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:background="#ffffff"
+        android:button="@drawable/couponmine_cb_btn_selector"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:id="@+id/iv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_6"
+            android:background="#f00"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_22"
+            android:paddingLeft="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_22">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/font_white_small1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="￥" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_price"
+                    style="@style/font_white_large1_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_coupon_price_old"
+                style="@style/font_white_small2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxEms="6"
+                android:maxLines="1"
+                android:minEms="6"
+                android:text="满0元可用" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            style="@style/font_black_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_coupon"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_toLeftOf="@id/btn_coupon"
+            android:layout_toRightOf="@id/iv_coupon"
+            android:gravity="left|center"
+            android:maxLines="2" />
+
+
+        <TextView
+            android:id="@+id/tv_coupon_content"
+            style="@style/font_gray6_small3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_coupon"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_toRightOf="@id/iv_coupon"
+            android:gravity="center"
+            android:text="进入店铺" />
+
+
+        <Button
+            android:id="@+id/btn_coupon"
+            style="@style/font_white_normal2"
+            android:layout_width="@dimen/dp_106"
+            android:layout_height="@dimen/dp_32"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_toLeftOf="@+id/ViewRight"
+            android:background="@drawable/qushiyong"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="立即使用" />
+
+
+        <View
+            android:id="@+id/ViewRight"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>

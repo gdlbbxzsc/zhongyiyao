@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_score"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="wrap_content"
+        android:src="@drawable/myscoretime_img_level" />
+
+    <TextView
+        android:id="@+id/tv_score_time"
+        style="@style/font_black_normal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_index_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/main_view"
+            style="@style/bg_f8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:requiresFadingEdge="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        layout="@layout/titlebar_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <!--这里这个lib_是为了防止和project中其他module同名冲突而加上的。同理，所有res下的文件皆应如此-->
+    <string name="lib_perms_yes">是</string>
+    <string name="lib_perms_no">否</string>
+
+
+    <string name="sys_error">系统错误</string>
+</resources>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_orderdetail_username"
+            style="@style/font_black_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_usercall"
+            style="@style/font_black_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:gravity="center"
+            tools:text="1545458754" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/font_gray6_small2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="地址:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_user_address"
+            style="@style/font_gray6_small2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            tools:text="饿哦就凉快圣诞节福利卡三等奖是联发科见识到了开发商的离开隆盛科技逢狼时刻的解放路速度快" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

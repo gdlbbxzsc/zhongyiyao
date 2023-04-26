@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- item_focus_bg -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/myorders_item_red_bg" android:state_checked="true" />
+    <item android:drawable="@drawable/refoundorders_item_gray_bg" android:state_checked="false" />
+
+
+</selector>

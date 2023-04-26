@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/tv_call"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="50%" />
+
+    <TextView
+        android:id="@+id/tv_bill_id"
+        style="@style/font_gray6_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="left|top"
+        android:maxLines="2"
+        android:minLines="1" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_bill_id" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/iv_def"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/addressmng_img_level" />
+
+        <TextView
+            android:id="@+id/tv_def"
+            style="@style/font_gray6_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="设为默认" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_del"
+        style="@style/font_gray9_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line"
+        android:layout_margin="@dimen/dp_16"
+        android:drawableLeft="@drawable/shanchu"
+        android:drawablePadding="@dimen/dp_8"
+        android:text="删除" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        style="@style/font_gray9_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_toLeftOf="@id/tv_del"
+        android:drawableLeft="@drawable/bianji"
+        android:drawablePadding="@dimen/dp_8"
+        android:text="编辑" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/font_red_large1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 36" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/font_red_large2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 30 " />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/font_red_normal1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 28 " />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/font_red_normal2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 26 " />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/font_red_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 24 " />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/font_red_small2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 22 " />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/font_red_small3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView中国123 18 " />
+
+</LinearLayout>

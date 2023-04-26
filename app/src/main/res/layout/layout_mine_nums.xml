@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_mine_col_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_mine_col_goods"
+            style="@style/font_white_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" />
+
+        <TextView
+            style="@style/font_white_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="收藏商品" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_gray"
+        android:layout_width="1dip"
+        android:layout_height="20dip" />
+
+    <LinearLayout
+        android:id="@+id/ll_mine_col_shops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_mine_col_shops"
+            style="@style/font_white_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" />
+
+        <TextView
+            style="@style/font_white_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="收藏店铺" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_gray"
+        android:layout_width="1dip"
+        android:layout_height="20dip" />
+
+    <LinearLayout
+        android:id="@+id/ll_mine_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_mine_records"
+            style="@style/font_white_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" />
+
+        <TextView
+            style="@style/font_white_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="浏览记录" />
+
+    </LinearLayout>
+
+</LinearLayout>

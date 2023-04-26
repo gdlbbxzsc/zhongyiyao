@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <ListView
+        android:id="@+id/lv_wuliu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/seckillindex_goods_itemcard_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="@dimen/dp_14"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:scrollbars="none" />
+
+</LinearLayout>
+

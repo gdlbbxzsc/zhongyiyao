@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="#00000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/titlebar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/View"
+        style="@style/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/include" />
+
+    <!--<LinearLayout -->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="top|center"-->
+    <!--android:orientation="vertical">-->
+    <!---->
+    <!--</LinearLayout>-->
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/View"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_wuliu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/line_d7"
+            android:dividerHeight="@dimen/dp_1"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_gwc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/smartRefreshLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_4"
+            android:scaleType="center"
+            android:src="@drawable/fudongenniu" />
+
+
+        <TextView
+            android:id="@+id/tv_gwc_num"
+            style="@style/font_red_small3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/browserecords_bg"
+            android:gravity="center"
+            android:minEms="1"
+            android:minHeight="@dimen/dp_24"
+            android:minWidth="@dimen/dp_24"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_4"
+            android:text="0" />
+    </FrameLayout>
+</RelativeLayout>

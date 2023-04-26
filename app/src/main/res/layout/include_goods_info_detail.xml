@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/shop_detail_banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <include
+        android:id="@+id/include_surplus_time_view"
+        layout="@layout/include_commodity_time_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_shop_detail_name"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textStyle="bold"
+        tools:text="商品名称" />
+
+    <TextView
+        android:id="@+id/tv_shop_detail_info"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        tools:text="圣诞贺卡" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            style="@style/font_red_large1_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:paddingBottom="0dp"
+            tools:text="¥0.01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_goods_price"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toEndOf="@+id/tv_goods_price"
+            android:text="暂时没有字段"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/ckb_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:checked="true"
+            android:button="@drawable/check_shouchang"
+            android:text="关注" />
+    </RelativeLayout>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout"
+        android:layout_margin="@dimen/dp_10"
+        zhy:max_select="-1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray" />
+</LinearLayout>

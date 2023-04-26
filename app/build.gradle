@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.pbph.shoppingmall"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("C:\\Users\\Administrator\\Desktop\\pbph")
+            keyAlias 'pbph'
+            keyPassword 'pbcom1234'
+            storePassword 'pbcom123'
+        }
+        release {
+            storeFile file("C:\\Users\\Administrator\\Desktop\\pbph")
+            keyAlias 'pbph'
+            keyPassword 'pbcom1234'
+            storePassword 'pbcom123'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release//设置签名信息
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+greendao {
+    schemaVersion 1
+    daoPackage 'com.pbph.shoppingmall.greendao'
+    targetGenDir 'src/main/java'
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':mvp_common_libs')
+    implementation project(':banner')
+    implementation project(':imagepicker')
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation files('libs/wechat-sdk-android-without-mta-1.1.7.jar')
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+    implementation files('libs/alipaySdk-20180403.jar')
+
+}

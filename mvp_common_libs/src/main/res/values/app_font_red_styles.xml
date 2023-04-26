@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="font_red_large1" parent="font_large1">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_red_large2" parent="font_large2">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_red_normal1" parent="font_normal1">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_red_normal2" parent="font_normal2">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_red_small1" parent="font_small1">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_red_small2" parent="font_small2">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_red_small3" parent="font_small3">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- =====-->
+    <style name="font_red_large1_bold" parent="font_red_large1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_red_large2_bold" parent="font_red_large2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_red_normal1_bold" parent="font_red_normal1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_red_normal2_bold" parent="font_red_normal2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_red_small1_bold" parent="font_red_small1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_red_small2_bold" parent="font_red_small2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_red_small3_bold" parent="font_red_small3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

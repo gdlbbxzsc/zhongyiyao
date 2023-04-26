@@ -1,0 +1,139 @@
+<resources>
+    <!--all of options 4 the order to do-->
+    <integer-array name="order_status_option_ids">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </integer-array>
+    <string-array name="order_status_option_texts">
+        <item>再次购买</item>
+        <item>删除订单</item>
+        <item>去支付</item>
+        <item>取消订单</item>
+        <item>确认收货</item>
+        <item>查看物流</item>
+        <item>申请退款</item>
+        <item>评价晒单</item>
+        <item>退货详情</item>
+        <item>填写物流信息</item>
+        <item>申请退货</item>
+        <item>退款详情</item>
+    </string-array>
+
+
+    <!--the name is the interface of IOption's method name-->
+    <string-array name="order_status_option_methods">
+        <item>buyAgain</item>
+        <item>delOrder</item>
+        <item>payOrder</item>
+        <item>cancelOrder</item>
+        <item>confirmOrder</item>
+        <item>checkLogistics</item>
+        <item>applyRefundMoney</item>
+        <item>evaluateOrder</item>
+        <item>refundGoodsDetail</item>
+        <item>subLogisticsInfo</item>
+        <item>applyRefundGoods</item>
+        <item>refundMoneysDetail</item>
+    </string-array>
+
+
+    <array name="order_status_option_text_colors">
+        <item>@color/red</item>
+        <item>@color/black</item>
+        <item>@color/red</item>
+        <item>@color/black</item>
+        <item>@color/red</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+    </array>
+    <array name="order_status_option_text_bgs">
+        <item>@drawable/myorders_item_red_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_red_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_red_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+        <item>@drawable/myorders_item_black_bg</item>
+    </array>
+
+
+    <!--the item content is <integer-array name="order_status_option_ids">'s item content-->
+    <!--再次购买、删除订单-->
+    <integer-array name="order_status_option_type1">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <!--去支付、取消订单-->
+    <integer-array name="order_status_option_type2">
+        <!--<item>3</item>-->
+        <item>4</item>
+    </integer-array>
+    <!--确认收货、查看物流、申请退款、再次购买-->
+    <integer-array name="order_status_option_type3">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <!--再次购买、评价晒单、删除订单、申请退货-->
+    <integer-array name="order_status_option_type4">
+        <item>1</item>
+        <item>8</item>
+        <item>2</item>
+        <item>11</item>
+    </integer-array>
+    <!--退货详情-->
+    <integer-array name="order_status_option_type5">
+        <item>9</item>
+    </integer-array>
+    <!--退货详情、填写物流信息-->
+    <integer-array name="order_status_option_type6">
+        <item>9</item>
+        <item>10</item>
+    </integer-array>
+    <!--确认收货、查看物流、再次购买-->
+    <integer-array name="order_status_option_type7">
+        <item>5</item>
+        <item>6</item>
+        <item>1</item>
+    </integer-array>
+    <!--退款详情-->
+    <integer-array name="order_status_option_type8">
+        <item>12</item>
+    </integer-array>
+    <!--再次购买、退款详情-->
+    <integer-array name="order_status_option_type9">
+        <item>1</item>
+        <item>12</item>
+    </integer-array>
+
+    <!--再次购买、退款详情-->
+    <integer-array name="order_status_option_type10">
+        <item>1</item>
+        <item>9</item>
+    </integer-array>
+
+
+</resources>
+
+

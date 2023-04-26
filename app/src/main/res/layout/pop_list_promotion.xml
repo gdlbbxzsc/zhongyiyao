@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:id="@+id/heard_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:background="@color/gray">
+
+            <TextView
+                style="@style/font_gray6_normal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="促销"
+                android:padding="@dimen/dp_15"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_30"
+                android:src="@drawable/x" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heard_relative"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <ListView
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:id="@+id/list_view_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:divider="@color/bantouming"
+                android:dividerHeight="1px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

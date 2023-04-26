@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/dp_12">
+
+    <ImageView
+        android:id="@+id/iv_shopstreet_shops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        tools:src="@drawable/b1banner" />
+
+    <TextView
+        android:id="@+id/tv_shopstreet_shops_name"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_shopstreet_shops"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="店铺名称" />
+
+    <TextView
+        android:id="@+id/tv_shopstreet_shops_desc"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_shopstreet_shops_name"
+        android:layout_below="@+id/tv_shopstreet_shops_name"
+        android:layout_marginTop="@dimen/dp_4"
+        android:gravity="center"
+        android:text="商品数量:" />
+
+    <TextView
+        android:id="@+id/tv_shopstreet_shops_desc_text"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_shopstreet_shops_desc"
+        android:layout_below="@+id/tv_shopstreet_shops_name"
+        android:layout_toRightOf="@+id/tv_shopstreet_shops_desc"
+        android:gravity="center"
+        tools:text="店铺名称" />
+
+
+    <TextView
+        android:id="@+id/tv_shopstreet_shops_enter"
+        style="@style/font_red_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_shopstreet_shops_desc"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_10"
+        android:drawablePadding="@dimen/dp_6"
+        android:drawableRight="@drawable/jinrudinapu"
+        android:gravity="center"
+        android:text="进入店铺" />
+</RelativeLayout>

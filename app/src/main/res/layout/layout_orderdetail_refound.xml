@@ -1,0 +1,256 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:background="#ffffff"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:shrinkColumns="1"
+    android:stretchColumns="1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="是否收货:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_receive"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_reason_pre"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="退货原因:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_reason"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="申请凭证:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_prove"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_price_pre"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="退款金额:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_price"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="问题说明:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_question"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="上传凭证:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_up_prove"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="返回方式:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_logistics_type"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="物流公司:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_logistics_company"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="物流单号:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_logistics_code"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="left|center"
+            android:text="退货地址:" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_refound_shopaddress"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center" />
+
+    </TableRow>
+
+
+</TableLayout>
+

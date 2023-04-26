@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|center"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shoppingcar_collection_tv_shape"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_5"
+        android:text="收藏" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:background="@drawable/shoppingcar_delete_tv_shape"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_5"
+        android:text="删除"
+        android:textColor="@color/red" />
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowBackground">#f8f8f8</item>-->
+        <item name="android:configChanges">orientation|keyboardHidden</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden|stateHidden|adjustPan</item>
+    </style>
+
+    <style name="HalfTransparentAppTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/bantouming</item>
+        　　
+        <!--<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>-->
+    </style>
+
+    <style name="TransparentAppTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/touming</item>
+        　　
+        <!--<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>-->
+    </style>
+
+
+    <style name="main_tabcontent_item_style" parent="font_small3">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/dp_6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:textColor">@color/black_gray</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">@dimen/dp_0.5</item>
+        <item name="android:background">@color/black_gray</item>
+    </style>
+
+    <style name="index_menu_button_style" parent="font_black_small2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/dp_6</item>
+        <item name="android:paddingBottom">@dimen/dp_32</item>
+        <item name="android:paddingTop">@dimen/dp_32</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="search_radiobutton_style" parent="font_small1_bold">
+        <item name="android:textColor">@drawable/search_rb_tc_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">12dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+    <style name="shopstreet_radiobutton_style" parent="font_small1">
+        <item name="android:textColor">@drawable/search_rb_tc_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">12dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+    <style name="salespromotion_rg_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:paddingRight">2dip</item>
+    </style>
+
+    <style name="salespromotion_rb_style" parent="font_normal2">
+        <item name="android:paddingLeft">@dimen/dp_14</item>
+        <item name="android:paddingRight">@dimen/dp_14</item>
+        <item name="android:paddingBottom">@dimen/dp_14</item>
+        <item name="android:paddingTop">@dimen/dp_14</item>
+        <item name="android:textColor">@drawable/salespromotion_rb_tc_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="seckillindexgoods_rb_style" parent="font_normal2_bold">
+        <item name="android:paddingLeft">@dimen/dp_14</item>
+        <item name="android:paddingRight">@dimen/dp_14</item>
+        <item name="android:paddingBottom">@dimen/dp_14</item>
+        <item name="android:paddingTop">@dimen/dp_14</item>
+        <item name="android:textColor">@drawable/salespromotion_rb_tc_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_3</item>
+    </style>
+
+
+    <style name="seckillindexbrand_rb_style" parent="font_normal2">
+        <item name="android:paddingLeft">@dimen/dp_14</item>
+        <item name="android:paddingRight">@dimen/dp_14</item>
+        <item name="android:paddingBottom">@dimen/dp_6</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <item name="android:textColor">@drawable/seckillindexbrand_rb_tc_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="seckillindex_rb_style" parent="font_small1">
+        <item name="android:textColor">@drawable/seckillindexbrand_rb_tc_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">12dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="myorders_rb_style" parent="font_small1">
+        <item name="android:textColor">@drawable/myorders_rb_tc_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">12dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+
+    <style name="frefoundorderdetail_rb_style" parent="font_small1">
+        <item name="android:textColor">@drawable/myorders_rb_tc_selector</item>
+        <item name="android:background">@drawable/refoundorderdetail_rb_bg_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+    <style name="spineerpop_listview1_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@color/line_d7</item>
+        <item name="android:dividerHeight">1dip</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+
+    <style name="suggest_rb_style" parent="font_small1">
+        <item name="android:textColor">@drawable/myorders_rb_tc_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/couponmine_cb_btn_selector</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+
+    <style name="shaixuan_style" parent="font_gray6_small1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">12dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:drawablePadding">3dip</item>-->
+    </style>
+
+    <style name="Popupwindow">
+        <item name="android:windowEnterAnimation">@anim/window_out</item>
+        <item name="android:windowExitAnimation">@anim/window_back</item>
+    </style>
+
+    <style name="Theme.NoBackgroundAndTitleMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+
+    </style>
+
+
+</resources>

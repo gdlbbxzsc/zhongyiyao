@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/font_red_small1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bargaining_bg"
+    android:paddingBottom="@dimen/dp_1"
+    android:layout_marginRight="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_1"
+    android:text="7天无理由退货">
+</TextView>

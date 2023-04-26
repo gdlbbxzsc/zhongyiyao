@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_shop_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            style="@style/font_black_normal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="店面名称" />
+
+        <TextView
+            android:id="@+id/tv_shop_position"
+            style="@style/font_gray6_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="店面摊位" />
+
+        <TextView
+            android:id="@+id/tv_shop_score"
+            style="@style/font_gray6_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="店面评分" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shop_collection"
+            style="@style/font_white_small2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shop_shouchang_bg"
+            android:drawableLeft="@drawable/zan"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_10"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="收藏" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/font_white_small2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shop_num_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="数量" />
+    </LinearLayout>
+</LinearLayout>

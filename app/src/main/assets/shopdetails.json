@@ -1,0 +1,271 @@
+{
+  "code": "200",
+  "data": {
+    "goodsId": 3,
+    "goodsImg": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+    "goodsInfoList": [
+      {
+        "goodsInfoId": 1,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010001",
+        "goodsinfoname": "美甲（带钻红色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "goodsInfoId": 2,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010002",
+        "goodsinfoname": "美甲（带钻蓝色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "1",
+          "4"
+        ]
+      },
+      {
+        "goodsInfoId": 3,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010003",
+        "goodsinfoname": "美甲（带钻黑色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "1",
+          "5"
+        ]
+      },
+      {
+        "goodsInfoId": 4,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010004",
+        "goodsinfoname": "美甲（带钻白色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "1",
+          "6"
+        ]
+      },
+      {
+        "goodsInfoId": 5,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010005",
+        "goodsinfoname": "美甲（带钻绿色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "1",
+          "7"
+        ]
+      },
+      {
+        "goodsInfoId": 6,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010006",
+        "goodsinfoname": "美甲（不带钻红色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "2",
+          "3"
+        ]
+      },
+      {
+        "goodsInfoId": 7,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010007",
+        "goodsinfoname": "美甲（不带钻蓝色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "2",
+          "4"
+        ]
+      },
+      {
+        "goodsInfoId": 8,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010008",
+        "goodsinfoname": "美甲（不带钻黑色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "2",
+          "5"
+        ]
+      },
+      {
+        "goodsInfoId": 9,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010009",
+        "goodsinfoname": "美甲（不带钻白色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "2",
+          "6"
+        ]
+      },
+      {
+        "goodsInfoId": 10,
+        "goodscapital": 19900,
+        "goodsid": 3,
+        "goodsinfoitemno": "2017112818010010",
+        "goodsinfoname": "美甲（带钻绿色）",
+        "imgurl": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "specificationId": [
+          "2",
+          "7"
+        ]
+      }
+    ],
+    "goodsSpecList": [
+      {
+        "cateId": 1,
+        "categoryList": {
+          "createname": "2017-10-24 17:26:58",
+          "createtime": 1508837218000,
+          "del": 1,
+          "id": 1,
+          "name": "规格",
+          "specificationList": [
+            {
+              "jjf": false,
+              "specificationId": 1,
+              "specificationname": "带钻"
+            },
+            {
+              "jjf": false,
+              "specificationId": 2,
+              "specificationname": "不带钻"
+            }
+          ],
+          "updatetime": 1508837218000
+        },
+        "createTime": 1511971200000,
+        "goodsId": 3,
+        "id": 1,
+        "specIds": "1,2"
+      },
+      {
+        "cateId": 1,
+        "categoryList": {
+          "createname": "2017-10-24 17:26:58",
+          "createtime": 1508837218000,
+          "del": 1,
+          "id": 1,
+          "name": "规格",
+          "specificationList": [
+            {
+              "jjf": false,
+              "specificationId": 1,
+              "specificationname": "带钻"
+            },
+            {
+              "jjf": false,
+              "specificationId": 2,
+              "specificationname": "不带钻"
+            }
+          ],
+          "updatetime": 1508837218000
+        },
+        "createTime": 1511971200000,
+        "goodsId": 3,
+        "id": 1,
+        "specIds": "1,2"
+      },
+      {
+        "cateId": 1,
+        "categoryList": {
+          "createname": "2017-10-24 17:26:58",
+          "createtime": 1508837218000,
+          "del": 1,
+          "id": 1,
+          "name": "规格",
+          "specificationList": [
+            {
+              "jjf": false,
+              "specificationId": 1,
+              "specificationname": "带钻"
+            },
+            {
+              "jjf": false,
+              "specificationId": 2,
+              "specificationname": "不带钻"
+            }
+          ],
+          "updatetime": 1508837218000
+        },
+        "createTime": 1511971200000,
+        "goodsId": 3,
+        "id": 1,
+        "specIds": "1,2"
+      },
+      {
+        "cateId": 2,
+        "categoryList": {
+          "createname": "2017-10-24 17:26:58",
+          "createtime": 1508837218000,
+          "del": 1,
+          "id": 2,
+          "name": "颜色",
+          "specificationList": [
+            {
+              "jjf": false,
+              "specificationId": 3,
+              "specificationname": "红色"
+            },
+            {
+              "jjf": false,
+              "specificationId": 4,
+              "specificationname": "蓝色"
+            },
+            {
+              "jjf": false,
+              "specificationId": 5,
+              "specificationname": "黑色"
+            },
+            {
+              "jjf": false,
+              "specificationId": 6,
+              "specificationname": "白色"
+            },
+            {
+              "jjf": false,
+              "specificationId": 7,
+              "specificationname": "绿色"
+            }
+          ],
+          "updatetime": 1508837218000
+        },
+        "createTime": 1511971200000,
+        "goodsId": 3,
+        "id": 2,
+        "specIds": "3,4,5,6,7"
+      }
+    ],
+    "goodsadvertising": "美甲 漂亮",
+    "goodscapital": 19900,
+    "goodsdesc": "http://www.lqdace.com/upload/product/2/hfr2x.jpg",
+    "goodsname": "美甲",
+    "goodsstock": 4444,
+    "imgList": [
+      {
+        "id": 3,
+        "img": "http://www.lqdace.com/upload/product/2/shouye_chanpin_pic2.png",
+        "isshow": 0,
+        "position": 2
+      }
+    ],
+    "ismailing": 0,
+    "newPrice": 15920,
+    "updatetime": 1511750377000
+  },
+  "msg": "成功"
+}

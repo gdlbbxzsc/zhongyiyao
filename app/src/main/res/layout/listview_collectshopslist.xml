@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <CheckBox
+        android:id="@+id/cb_coupon"
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:background="@null"
+        android:button="@drawable/couponmine_cb_btn_selector"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv_shoppic"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_toRightOf="@id/cb_coupon"
+        android:scaleType="fitXY"
+        tools:src="@drawable/b1banner" />
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_shoppic"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/iv_shoppic"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/tv_count"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_totalevalute"
+        android:layout_toRightOf="@id/iv_shoppic"
+        android:gravity="center"
+        android:text="收藏人数" />
+
+    <TextView
+        android:id="@+id/tv_count_content"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_count"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@+id/tv_count"
+        android:gravity="center"
+        tools:text="000" />
+
+
+    <TextView
+        android:id="@+id/tv_totalevalute"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_shoppic"
+        android:layout_toRightOf="@id/iv_shoppic"
+        android:gravity="center"
+        android:text="综合评价" />
+
+    <TextView
+        android:id="@+id/tv_totalevalute_content"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_totalevalute"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@+id/tv_totalevalute"
+        android:gravity="center"
+        tools:text="000" />
+
+
+    <TextView
+        android:id="@+id/tv_shopstreet_shops_enter"
+        style="@style/font_red_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_shopname"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_toLeftOf="@+id/ViewRight"
+        android:drawablePadding="@dimen/dp_6"
+        android:drawableRight="@drawable/jinrudinapu"
+        android:gravity="center"
+        android:text="进入店铺" />
+
+    <View
+        android:id="@+id/ViewRight"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

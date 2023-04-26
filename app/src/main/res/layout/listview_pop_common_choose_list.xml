@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+    <CheckBox
+        android:id="@+id/cb_common_choose_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:button="@drawable/couponmine_cb_btn_selector"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_common_choose_list"
+        style="@style/font_black_normal2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="left|center"
+        android:maxLines="2" />
+</LinearLayout>

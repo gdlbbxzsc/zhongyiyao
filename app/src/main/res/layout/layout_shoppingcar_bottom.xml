@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_49"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/is_all_checked"
+        style="@style/font_black_small2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:button="@drawable/shoppingcar_cb_selecter"
+        android:paddingStart="@dimen/dp_10"
+        android:text="@string/shoppingcar_select_all" />
+
+    <include
+        android:id="@+id/include_settlement"
+        layout="@layout/layout_shoppingcar_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/include_edit"
+        layout="@layout/layout_shoppingcar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

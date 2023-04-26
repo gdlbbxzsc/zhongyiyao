@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/dp_8">
+
+        <ImageView
+            android:id="@+id/iv_shopmessage"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_12"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+
+        <TextView
+            android:id="@+id/tv_shopmessage_num"
+            style="@style/font_white_small3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/unloadnum_bg"
+            android:gravity="center"
+            android:minHeight="@dimen/dp_22"
+            android:minWidth="@dimen/dp_22"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_4" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_shopmessage_name"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_toRightOf="@+id/touxiang"
+        android:gravity="center"
+        android:text="店铺名称" />
+
+    <TextView
+        android:id="@+id/tv_shopmessage_desc"
+        style="@style/font_gray6_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_shopmessage_name"
+        android:layout_below="@+id/tv_shopmessage_name"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="left|center"
+        android:text="描述" />
+
+    <View
+        style="@style/line_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_alignBottom="@+id/touxiang"
+        android:layout_alignLeft="@+id/tv_shopmessage_name"
+        android:layout_marginRight="@dimen/dp_20" />
+
+
+    <TextView
+        android:id="@+id/tv_shopmessage_date"
+        style="@style/font_gray9_small3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_shopmessage_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text="时间" />
+
+
+</RelativeLayout>

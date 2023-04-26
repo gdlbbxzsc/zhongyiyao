@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_tabcontent_item_style"
+    android:drawableTop="@drawable/tab_3_bg_selecter"
+    android:text="@string/tab_name3" />

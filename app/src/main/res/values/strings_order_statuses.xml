@@ -1,0 +1,121 @@
+<resources>
+
+    <integer-array name="order_status_ids">
+        <item>15</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+    </integer-array>
+
+
+    <string-array name="order_status_texts">
+        <item>已取消</item>
+        <item>未付款</item>
+        <item>已付款未发货</item>
+        <item>已发货</item>
+        <item>已收货</item>
+        <item>已完成</item>
+        <item>申请退款</item>
+        <item>同意退款</item>
+        <item>拒绝退款</item>
+        <item>退款成功</item>
+        <item>退款失败</item>
+        <item>申请退货</item>
+        <item>同意退货</item>
+        <item>拒绝退货</item>
+        <item>退货已发货</item>
+        <item>退货成功</item>
+        <item>退货失败</item>
+        <item>退货退款成功</item>
+        <item>退货退款失败</item>
+    </string-array>
+
+
+    <array name="order_status_option_types">
+        <item>@array/order_status_option_type1</item>
+        <item>@array/order_status_option_type2</item>
+        <item>@array/order_status_option_type3</item>
+        <item>@array/order_status_option_type7</item>
+        <item>@array/order_status_option_type4</item>
+        <item>@array/order_status_option_type4</item>
+        <item>@array/order_status_option_type8</item>
+        <item>@array/order_status_option_type8</item>
+        <item>@array/order_status_option_type8</item>
+        <item>@array/order_status_option_type9</item>
+        <item>@array/order_status_option_type8</item>
+        <item>@array/order_status_option_type5</item>
+        <item>@array/order_status_option_type6</item>
+        <item>@array/order_status_option_type5</item>
+        <item>@array/order_status_option_type5</item>
+        <item>@array/order_status_option_type5</item>
+        <item>@array/order_status_option_type5</item>
+        <item>@array/order_status_option_type10</item>
+        <item>@array/order_status_option_type5</item>
+    </array>
+
+
+    <integer-array name="order_status_detail_type_ids">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>3</item>
+        <item>5</item>
+        <item>3</item>
+        <item>6</item>
+        <item>6</item>
+        <item>4</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+
+
+    <string-array name="order_status_detail_type_texts">
+
+        <item>已取消</item>
+        <item>待付款</item>
+        <item>待收货</item>
+        <item>待收货</item>
+        <item>已完成</item>
+        <item>已完成</item>
+        <item>退款</item>
+        <item>退款</item>
+        <item>待收货</item>
+        <item>退款</item>
+        <item>待收货</item>
+        <item>退货</item>
+        <item>退货</item>
+        <item>已完成</item>
+        <item>退货</item>
+        <item>退货</item>
+        <item>退货</item>
+        <item>退货</item>
+        <item>退货</item>
+    </string-array>
+
+
+</resources>
+
+

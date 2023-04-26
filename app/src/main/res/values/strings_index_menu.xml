@@ -1,0 +1,33 @@
+<resources>
+
+    <integer-array name="index_menus_id">
+        <!--<item>1</item>-->
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+
+    <string-array name="index_menus_text">
+        <!--<item>扫码购物</item>-->
+        <item>店铺街</item>
+        <item>我的订单</item>
+        <item>全部分类</item>
+        <item>收藏商品</item>
+    </string-array>
+
+
+    <array name="index_menus_img">
+        <!--<item>@drawable/saomagouwu</item>-->
+        <item>@drawable/dianpujie</item>
+        <item>@drawable/wodedingdan</item>
+        <item>@drawable/quanbufenlei</item>
+        <item>@drawable/shangpinshouchang</item>
+    </array>
+
+    <!--<item>@drawable/chuxiaohuodong</item>-->
+    <!--<item>@drawable/lingquanzhongxin</item>-->
+
+</resources>
+
+

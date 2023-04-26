@@ -1,0 +1,32 @@
+<resources>
+
+
+    <style name="font_large1">
+        <item name="android:textSize">@dimen/sp_26</item>
+    </style>
+
+    <style name="font_large2">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="font_normal1">
+        <item name="android:textSize">@dimen/sp_22</item>
+    </style>
+
+    <style name="font_normal2">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="font_small1">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="font_small2">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="font_small3">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+</resources>

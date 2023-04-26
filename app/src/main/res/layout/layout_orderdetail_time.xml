@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="剩余:" />
+
+    <TextView
+        android:id="@+id/tv_hh"
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:gravity="center"
+        android:maxLength="2"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小时" />
+
+    <TextView
+        android:id="@+id/tv_mm"
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:gravity="center"
+        android:maxLength="2"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分钟" />
+
+    <TextView
+        android:id="@+id/tv_ss"
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:gravity="center"
+        android:maxLength="2"
+        android:text="00"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/font_white_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="2"
+        android:text="秒"
+        android:visibility="gone" />
+</LinearLayout>
+

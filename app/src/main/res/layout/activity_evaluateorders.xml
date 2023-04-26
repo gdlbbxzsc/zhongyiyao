@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar_myorders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <include
+        android:id="@+id/include_list"
+        layout="@layout/layout_evaluateorders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

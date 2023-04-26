@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="font_large1_bold" parent="font_large1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_large2_bold" parent="font_large2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_normal1_bold" parent="font_normal1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_normal2_bold" parent="font_normal2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_small1_bold" parent="font_small1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_small2_bold" parent="font_small2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_small3_bold" parent="font_small3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--分割线颜色-->
+    <color name="line_d7">#d7d7d7</color>
+
+    <!--部分背景颜色-->
+    <color name="bg_f4">#f4f4f4</color>
+    <color name="bg_f5">#f5f6f7</color>
+    <color name="bg_f8">#f8f8f8</color>
+
+    部分字体颜色
+    <color name="red">#ee2222</color>
+    <color name="black">#222222</color>
+    <color name="gray6">#666666</color>
+    <color name="gray9">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0d7bd9</color>
+    <color name="gray10">#c7c8c9</color>
+
+
+</resources>

@@ -1,0 +1,4 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button1"
+    style="@style/index_menu_button_style"
+    android:drawableTop="@drawable/saomagouwu" />

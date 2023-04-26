@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|top"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_6">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        tools:src="@drawable/b1banner" />
+
+    <TextView
+        android:id="@+id/tv_contents"
+        style="@style/font_black_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_pic"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_70"
+        android:layout_toRightOf="@id/iv_pic"
+        android:gravity="left|center"
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        style="@style/font_gray6_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_price"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@id/iv_pic"
+        android:text="￥" />
+
+    <TextView
+        android:id="@+id/tv_price_pre"
+        style="@style/font_red_small2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_pic"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@id/iv_pic"
+        android:text="￥" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/font_red_normal1_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_pic"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@id/tv_price_pre"
+        android:text="00.00" />
+
+
+    <TextView
+        android:id="@+id/tv_gwc"
+        style="@style/font_black_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_pic"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/myorderdetail_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_6"
+        android:text="加入购物车" />
+
+
+</RelativeLayout>

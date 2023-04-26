@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/seckillindex_rb_style"
+            android:text="默认" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/seckillindex_rb_style"
+            android:text="好评优先" />
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/radioButton3"-->
+        <!--style="@style/seckillindex_rb_style"-->
+        <!--android:text="有券优先" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioButton4"-->
+            <!--style="@style/seckillindex_rb_style"-->
+            <!--android:text="分类" />-->
+
+
+    </RadioGroup>
+
+    <View
+        style="@style/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+
+    <com.pbph.shoppingmall.utils.ui.NoScrollViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

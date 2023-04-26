@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            style="@style/font_black_normal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:drawableEnd="@drawable/blackjiantou"
+            android:drawablePadding="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            tools:text="店铺名称" />
+
+        <TextView
+            android:id="@+id/tv_call_seller"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:drawableEnd="@drawable/lianxo"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="联系卖家"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <include
+            android:id="@+id/ll_num_money"
+            layout="@layout/layout_orderdetail_num_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

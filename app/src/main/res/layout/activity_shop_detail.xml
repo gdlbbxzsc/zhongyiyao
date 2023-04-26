@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar_common" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/view_shop_heard"
+                layout="@layout/include_shop_heard" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/font_gray6_normal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="店铺首页" />
+
+                <TextView
+                    android:id="@+id/tv_all_goods"
+                    style="@style/font_gray6_normal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="全部商品" />
+
+                <TextView
+                    android:id="@+id/tv_new_goods"
+                    style="@style/font_gray6_normal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="新品上架" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/line_d7" />
+
+            <TextView
+                android:id="@+id/tv_contact_buy"
+                style="@style/font_gray6_normal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/youjiantou"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="联系买家" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/line_d7" />
+
+            <com.pbph.shoppingmall.myview.MyListView
+                android:id="@+id/lv_shop_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--<TextView-->
+            <!--style="@style/font_gray6_normal2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="@dimen/dp_10"-->
+            <!--android:paddingLeft="@dimen/dp_16"-->
+            <!--android:paddingRight="@dimen/dp_16"-->
+            <!--android:paddingTop="@dimen/dp_10"-->
+            <!--android:text="经营范围 :" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginLeft="@dimen/dp_16"-->
+            <!--android:layout_marginRight="@dimen/dp_16"-->
+            <!--android:background="@color/line_d7" />-->
+
+            <!--<TextView-->
+            <!--style="@style/font_gray6_normal2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="@dimen/dp_10"-->
+            <!--android:paddingLeft="@dimen/dp_16"-->
+            <!--android:paddingRight="@dimen/dp_16"-->
+            <!--android:paddingTop="@dimen/dp_10"-->
+            <!--android:text="经营范围 :" />-->
+
+
+            <!--<TextView-->
+            <!--style="@style/font_gray6_normal2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="@dimen/dp_10"-->
+            <!--android:paddingLeft="@dimen/dp_16"-->
+            <!--android:paddingRight="@dimen/dp_16"-->
+            <!--android:paddingTop="@dimen/dp_10"-->
+            <!--android:text="经营范围 :" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginLeft="@dimen/dp_16"-->
+            <!--android:layout_marginRight="@dimen/dp_16"-->
+            <!--android:background="@color/line_d7" />-->
+
+            <!--<TextView-->
+            <!--style="@style/font_gray6_normal2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="@dimen/dp_10"-->
+            <!--android:paddingLeft="@dimen/dp_16"-->
+            <!--android:paddingRight="@dimen/dp_16"-->
+            <!--android:paddingTop="@dimen/dp_10"-->
+            <!--android:text="经营范围 :" />-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:background="@color/line_d7"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/font_gray6_normal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="授权品牌 :" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/line_d7"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/dp_10"-->
+            <!--android:src="@mipmap/ic_launcher" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/dp_10"-->
+            <!--android:src="@mipmap/ic_launcher" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/dp_10"-->
+            <!--android:src="@mipmap/ic_launcher" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

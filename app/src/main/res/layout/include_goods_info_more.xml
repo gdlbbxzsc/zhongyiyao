@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_goods_coupon"
+        style="@style/font_gray6_small1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:drawableRight="@drawable/gengduo"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="优惠券"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_goods_promotion"
+        style="@style/font_gray6_small1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:drawableRight="@drawable/gengduo"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="促销"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_goods_choice"
+        style="@style/font_gray6_small1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:drawableRight="@drawable/gengduo"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="已选" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray" />
+
+
+</LinearLayout>

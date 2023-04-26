@@ -1,0 +1,30 @@
+<resources>
+
+    <integer-array name="pop_ids">
+        <item>1</item>
+        <item>2</item>
+        <!--<item>3</item>-->
+        <item>4</item>
+        <item>5</item>
+        <!--<item>6</item>-->
+    </integer-array>
+
+    <string-array name="pop_texts">
+        <item>消息</item>
+        <item>首页</item>
+        <!--<item>分享</item>-->
+        <item>我的收藏</item>
+        <item>浏览记录</item>
+        <!--<item>意见反馈</item>-->
+    </string-array>
+
+
+    <array name="pop_imgs">
+        <item>@drawable/tc_xx</item>
+        <item>@drawable/tc_sy</item>
+        <!--<item>@drawable/tc_fx</item>-->
+        <item>@drawable/tc_sc</item>
+        <item>@drawable/tc_jl</item>
+        <!--<item>@drawable/tc_fk</item>-->
+    </array>
+</resources>

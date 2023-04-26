@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_3">
+
+        <ImageButton
+            android:id="@+id/titlebar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@null"
+            android:padding="6dip"
+            android:src="@drawable/fanhuiicon" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_collect_rg"
+            android:layout_width="@dimen/dp_220"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/seckillindex_rb_style"
+                    android:text="商品" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/seckillindex_rb_style"
+                    android:text="店铺" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/radioGroup"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/radioButtonline1"
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_3"
+                        android:background="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/radioButtonline2"
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_3"
+                        android:background="@color/red" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/titlebar_right2"
+            style="@style/font_black_small1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_toLeftOf="@id/titlebar_right"
+            android:background="@null"
+            android:button="@null"
+            android:padding="6dip"
+            android:text="编辑" />
+
+
+        <ImageButton
+            android:id="@+id/titlebar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@null"
+            android:padding="6dip"
+            android:src="@drawable/ss" />
+
+        <View
+            style="@style/line_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rl_collect_rg"
+            android:layout_marginTop="@dimen/dp_3" />
+    </RelativeLayout>
+
+
+    <com.pbph.shoppingmall.utils.ui.NoScrollViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+ 
+</LinearLayout>

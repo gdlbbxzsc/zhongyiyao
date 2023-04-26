@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seckillindex_category_item_time_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_4">
+
+    <TextView
+        style="@style/font_white_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="距结束" />
+
+    <TextView  android:maxLength="2"
+        android:id="@+id/tv_hh"
+        style="@style/font_black_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:background="@drawable/white_round_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_white_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":" />
+
+    <TextView  android:maxLength="2"
+        android:id="@+id/tv_mm"
+        style="@style/font_black_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:background="@drawable/white_round_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text="00" />
+
+    <TextView
+        style="@style/font_white_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":" />
+
+    <TextView  android:maxLength="2"
+        android:id="@+id/tv_ss"
+        style="@style/font_black_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:background="@drawable/white_round_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text="00" />
+</LinearLayout>
+

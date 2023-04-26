@@ -1,0 +1,20 @@
+<resources>
+    <!--分割线颜色-->
+    <style name="line_gray">
+        <item name="android:background">#d7d7d7</item>
+    </style>
+
+    <!--部分背景颜色-->
+    <style name="bg_f5">
+        <item name="android:background">#f5f6f7</item>
+    </style>
+
+    <style name="bg_f8">
+        <item name="android:background">#f8f8f8</item>
+    </style>
+
+    <style name="bg_f4">
+        <item name="android:background">#f4f4f4</item>
+    </style>
+
+</resources>

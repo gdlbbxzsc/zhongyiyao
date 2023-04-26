@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    style="@style/bg_f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/font_black_normal2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_16"
+                android:text="问题类型" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_16">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/suggest_rb_style"
+                    android:checked="true"
+                    android:text="功能异常" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/suggest_rb_style"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:text="优化建议" />
+            </RadioGroup>
+
+
+            <TextView
+                style="@style/font_black_normal2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="#ffffff"
+                android:padding="@dimen/dp_16"
+                android:text="问题或建议" />
+
+            <TextView
+                style="@style/font_gray6_small2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="#ffffff"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_16"
+                android:text="@string/suggest" />
+
+            <EditText
+                android:id="@+id/edt_content"
+                style="@style/font_gray6_small1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left|top"
+                android:hint="请输入..."
+                android:inputType="textMultiLine"
+                android:maxLines="8"
+                android:minLines="5"
+                android:padding="@dimen/dp_16"
+                android:textColorHint="@color/gray6" />
+
+
+            <TextView
+                style="@style/font_black_normal2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="#ffffff"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_16"
+                android:text="添加图片(选填)" />
+
+            <com.pbph.shoppingmall.utils.ui.ScrollGridView
+                android:id="@+id/gridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:cacheColorHint="#00000000"
+                android:columnWidth="100dp"
+                android:divider="#00000000"
+                android:dividerHeight="0dip"
+                android:drawSelectorOnTop="false"
+                android:fadingEdge="none"
+                android:horizontalSpacing="@dimen/dp_16"
+                android:listSelector="#00000000"
+                android:numColumns="5"
+                android:padding="@dimen/dp_16"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dp_16" />
+
+
+            <TextView
+                style="@style/font_black_normal2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="#ffffff"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_16"
+                android:text="联系方式(选填)" />
+
+            <EditText
+                android:id="@+id/edt_call"
+                style="@style/font_gray6_small1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left|center"
+                android:hint="请留下您的手机号码"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="@dimen/dp_16"
+                android:textColorHint="@color/gray6" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/button"
+        style="@style/font_white_normal1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="发布" />
+
+
+</LinearLayout>

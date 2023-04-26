@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/font_black_small2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoppingcar_totle" />
+
+            <TextView
+                android:id="@+id/total"
+                style="@style/font_red_small2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/font_black_small3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoppingcar_discount" />
+
+            <TextView
+                android:id="@+id/youhui"
+                style="@style/font_black_small2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/settlement"
+        style="@style/font_white_normal1"
+        android:layout_width="@dimen/dp_132"
+        android:layout_height="match_parent"
+        android:background="@color/shoppingcar_settlement_bg_col"
+        android:gravity="center"
+        android:text="@string/shoppingcar_settlement" />
+</LinearLayout>

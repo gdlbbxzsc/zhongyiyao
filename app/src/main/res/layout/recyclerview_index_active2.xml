@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="left|center"
+    android:orientation="vertical">
+
+    <com.pbph.shoppingmall.utils.ui.LinearGradientTextView
+        android:id="@+id/tv_active_title"
+        style="@style/font_small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_8"
+        android:singleLine="true"
+        android:text="发现好货"
+        app:endColor="@color/fxhhe"
+        app:startColor="@color/fxhhs" />
+
+    <TextView
+        android:id="@+id/tv_active_content"
+        style="@style/font_gray6_small3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_2"
+        android:singleLine="true"
+        android:text="标题" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tv_active_img1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_2"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner" />
+
+        <ImageView
+            android:id="@+id/tv_active_img2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_2"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

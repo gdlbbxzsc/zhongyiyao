@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout_showview"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/drawerlayout_showview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+
+            <!--<TextView-->
+            <!--style="@style/font_black_normal2"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#ffffff"-->
+            <!--android:padding="@dimen/dp_16"-->
+            <!--android:text="服务类型"-->
+            <!--android:visibility="gone" />-->
+
+            <!--<com.pbph.shoppingmall.utils.ui.ScrollGridView-->
+            <!--android:id="@+id/gv_service_type"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#ffffff"-->
+            <!--android:cacheColorHint="#00000000"-->
+            <!--android:columnWidth="100dp"-->
+            <!--android:divider="#00000000"-->
+            <!--android:drawSelectorOnTop="false"-->
+            <!--android:fadingEdge="none"-->
+            <!--android:horizontalSpacing="@dimen/dp_16"-->
+            <!--android:listSelector="#00000000"-->
+            <!--android:numColumns="3"-->
+            <!--android:paddingBottom="@dimen/dp_16"-->
+            <!--android:paddingLeft="@dimen/dp_16"-->
+            <!--android:paddingRight="@dimen/dp_16"-->
+            <!--android:scrollbars="none"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="@dimen/dp_16"-->
+            <!--android:visibility="gone" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_14"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_16">
+
+                <TextView
+                    style="@style/font_black_normal2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="价格区间" />
+
+                <!--<CheckBox-->
+                <!--android:id="@+id/cb_price"-->
+                <!--style="@style/font_gray6_normal2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@null"-->
+                <!--android:button="@null"-->
+                <!--android:drawablePadding="@dimen/dp_8"-->
+                <!--android:drawableRight="@drawable/check_right_jiantou"-->
+                <!--android:gravity="right|center"-->
+                <!--android:text="全部"-->
+                <!--android:visibility="gone" />-->
+            </LinearLayout>
+
+            <!--<com.pbph.shoppingmall.utils.ui.ScrollGridView-->
+            <!--android:id="@+id/gv_price_type"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/dp_14"-->
+            <!--android:background="#ffffff"-->
+            <!--android:cacheColorHint="#00000000"-->
+            <!--android:columnWidth="100dp"-->
+            <!--android:divider="#00000000"-->
+            <!--android:drawSelectorOnTop="false"-->
+            <!--android:fadingEdge="none"-->
+            <!--android:horizontalSpacing="@dimen/dp_16"-->
+            <!--android:listSelector="#00000000"-->
+            <!--android:numColumns="3"-->
+            <!--android:paddingBottom="@dimen/dp_16"-->
+            <!--android:paddingLeft="@dimen/dp_16"-->
+            <!--android:paddingRight="@dimen/dp_16"-->
+            <!--android:scrollbars="none"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="@dimen/dp_16"-->
+            <!--android:visibility="gone" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16">
+
+                <EditText
+                    android:id="@+id/edt_start_prise"
+                    style="@style/font_black_normal2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/bg_f8"
+                    android:gravity="center"
+                    android:hint="最低价"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_6" />
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#444444" />
+
+                <EditText
+                    android:id="@+id/edt_end_prise"
+                    style="@style/font_black_normal2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/bg_f8"
+                    android:gravity="center"
+                    android:hint="最高价"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_6" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="@style/font_black_normal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/reset_btn_bg"
+            android:text="重置" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/font_white_normal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

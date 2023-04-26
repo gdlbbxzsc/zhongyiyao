@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/titlebar_shoppingcar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottom"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1">
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="#dcdcdc"
+                android:dividerHeight="0px"
+                android:fastScrollEnabled="false"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="Translate" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_gray" />
+
+        <include layout="@layout/layout_shoppingcar_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"
+        android:background="@color/bg_f4"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_gray6_small2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_200"
+            android:text="登录后同步电脑与手机购物车中的商品" />
+
+        <TextView
+            android:id="@+id/tv_go_login"
+            style="@style/font_red_normal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/red_round_bg1"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_40"
+            android:paddingRight="@dimen/dp_40"
+            android:paddingTop="@dimen/dp_10"
+            android:text="登录" />
+    </LinearLayout>
+</RelativeLayout>

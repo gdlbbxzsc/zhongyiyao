@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_good_title1"
+        style="@style/font_black_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_8"
+        android:singleLine="true"
+        android:text="标题" />
+
+    <TextView
+        android:id="@+id/tv_good_title2"
+        style="@style/font_red_small3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_2"
+        android:singleLine="true"
+        android:text="标题" />
+
+
+    <ImageView
+        android:id="@+id/iv_index_goods1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="@dimen/dp_2"
+        android:scaleType="fitXY"
+        tools:src="@drawable/banner" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/font_black_normal1"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/font_black_small2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="共" />
+
+    <TextView
+        android:id="@+id/iv_goods_num"
+        style="@style/font_black_small2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0" />
+
+    <TextView
+        style="@style/font_black_small2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="件商品 需付款:    ￥" />
+
+    <TextView
+        android:id="@+id/iv_money_all"
+        style="@style/font_black_small2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_6"
+        android:gravity="center"
+        android:text="00.00" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/layout_similarity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="1px"
+            android:background="@color/line_d7" />
+
+        <TextView
+            style="@style/font_gray6_small2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/xsxingxing"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="更多相似推荐" />
+
+        <View
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="1px"
+            android:background="@color/line_d7" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="100dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:horizontalSpacing="@dimen/dp_16"
+        android:listSelector="#00000000"
+        android:numColumns="2"
+        android:padding="@dimen/dp_16"
+        android:paddingLeft="@dimen/dp_16"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp_16" />
+
+
+</LinearLayout>

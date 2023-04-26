@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_brand_name"
+        style="@style/font_black_normal2_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:gravity="center"
+        android:text="名称" />
+
+
+    <include
+        layout="@layout/layout_seckillindex_brand_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_6" />
+
+    <ImageView
+        android:id="@+id/iv_category_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_brand_name"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/ms_bg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_category_banner"
+        android:background="@drawable/seckillindex_brand_item_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_category_ad1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_6"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+        <ImageView
+            android:id="@+id/iv_category_ad2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_6"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+        <ImageView
+            android:id="@+id/iv_category_ad3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_6"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+    </LinearLayout>
+
+
+</RelativeLayout>

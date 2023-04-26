@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pbph.shoppingmall">
+
+    <permission
+        android:name="cn.rongcloud.im.permission.MIPUSH_RECEIVE1"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="cn.rongcloud.im.permission.MIPUSH_RECEIVE" />
+    <permission
+        android:name="cn.rongcloud.im.permission.C2D_MESSAGE1"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.rongcloud.im.permission.C2D_MESSAGE" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!--<meta-data-->
+        <!--android:name=".utils.glide.CustomGlideModule"-->
+        <!--android:value="GlideModule" />-->
+
+        <activity
+            android:name=".module.welcome.WelcomeActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.account.login.LoginActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.firmorder.FirmOrderActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.firmorder.goodslist.GoodsListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.payment.PaymentActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.payment.payresult.PayResultActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.firmorder.invoice.InvoiceActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.main.MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.typegoodslist.TypeGoodsListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.search.SearchActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.shopstreet.ShopStreetActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.message.index.MessageIndexActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.message.type.MessageTypeActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.logistics.LogisticsDetailActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.salespromotion.SalesPromotionActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.seckill.index.SecKillIndexActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.capture.CaptureResultActivity"
+            android:theme="@style/TransparentAppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.seckill.goodslist.SecKillGoodsListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.goodsdetail.GoodsDetailActivity"
+            android:theme="@style/AppTheme" >
+            <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+        </activity>
+        <activity
+            android:name=".module.shop.ShopActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.seckill.categorylist.SecKillCategoryListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.seckill.brandlist.SecKillBrandListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.coupon.index.CouponIndexActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.coupon.search.CouponSearchActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.account.register.RegisterActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.coupon.mine.CouponMineActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.browserecords.BrowseRecordsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".module.orders.myorders.index.MyOrdersActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.orders.search.OrdersSearchActivity"
+            android:theme="@style/HalfTransparentAppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.orders.refundorders.index.ReFundOrdersActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+        <activity
+            android:name=".module.orders.evaluateorders.index.EvaluateOrdersActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+        <activity
+            android:name=".module.orders.refundorders.submit.ReFundOrderSubmitActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.orders.evaluateorders.submit.EvaluateOrderSubmitActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.goodstype.GoodsTypeActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.orders.myorders.detail.MyOrderDetailActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.myscore.MyScoreActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.collect.CollectIndexActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.orders.evaluateorders.evaluatedetail.GoodsEvaluateDetailActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.suggest.SuggestActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".module.account.usersetting.UserSettingActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.input.choose.InputChooseActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.input.edit.InputEditActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.addressmng.list.AddressMngActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.shopallgoods.AllWithNewGoodsActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.bill.list.BillMngActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.bill.submit.AddOrEditBillActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.collect.search.goods.MyCollectGoodsSearchActivity"
+            android:theme="@style/HalfTransparentAppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.collect.search.shops.MyCollectShopsSearchActivity"
+            android:theme="@style/HalfTransparentAppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.similarity.SimilarityActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.account.updatepassword.UpdatePwdActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.account.updateaccount.UpdateActActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.shopdetail.ShopDetailActivity"
+            android:theme="@style/HalfTransparentAppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.lookgoodsbigpri.LookGoodsBigPriActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.ordergoodschoise.OrderGoodsChoiseActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".module.addressmng.submit.AddOrEditAddressActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+        <activity
+            android:name=".module.shopnewgoods.NewGoodsGoShelfActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.sendbackinfo.SendBackInfoActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.shoppingcar.ShoppingCarActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.shopdetail.shopsearch.ShopWithinSearchActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".module.shopgoodstypelist.TypeGoodsListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <!--/******************************微信支付***************************************/-->
+        <activity
+            android:name="com.pbph.shoppingmall.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/TransparentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx3e5624b6a9f3c28b" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pbph.shoppingmall.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/TransparentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx3e5624b6a9f3c28b" />
+            </intent-filter>
+        </activity>
+        <!--/******************************微信支付***************************************/-->
+
+        <!--/******************************阿里****************************************/-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--/******************************阿里****************************************/-->
+    </application>
+
+</manifest>

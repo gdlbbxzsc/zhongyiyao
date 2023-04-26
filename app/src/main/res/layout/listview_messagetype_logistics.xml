@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/message_item_bg">
+
+    <TextView
+        android:id="@+id/tv_wuliuzhuangtai"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="物流状态" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_wuliuzhuangtai" />
+
+
+    <ImageView
+        android:id="@+id/iv_wuliu_img"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:scaleType="fitXY"
+        android:src="@drawable/touxiang" />
+
+
+    <TextView
+        android:id="@+id/tv_wuliu_name"
+        style="@style/font_black_normal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_wuliu_img"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_toRightOf="@+id/iv_wuliu_img"
+        android:gravity="center"
+        android:text="店铺名称" />
+
+    <TextView
+        android:id="@+id/tv_wuliu_desc"
+        style="@style/font_gray6_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_wuliu_name"
+        android:layout_below="@+id/tv_wuliu_name"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="left|center"
+        android:text="描述" />
+
+    <TextView
+        android:id="@+id/tv_wuliu_desc1"
+        style="@style/font_gray6_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_wuliu_name"
+        android:layout_below="@+id/tv_wuliu_desc"
+        android:layout_marginRight="@dimen/dp_16"
+
+        android:gravity="left|center"
+        android:text="描述" />
+
+
+    <TextView
+        android:id="@+id/tv_wuliu_date"
+        style="@style/font_gray9_small3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_wuliuzhuangtai"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="center"
+        android:text="时间" />
+
+
+</RelativeLayout>

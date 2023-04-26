@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/black_gray" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49">
+
+        <CheckBox
+            android:id="@+id/is_all_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:button="@drawable/shoppingcar_cb_selecter"
+            android:paddingStart="@dimen/dp_10"
+            android:text="@string/shoppingcar_select_all"
+            android:textColor="@color/shoppingcar_bottom_tv_col"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ly_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/is_all_checked">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shoppingcar_totle"
+                    android:textColor="@color/shoppingcar_bottom_tv_col"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="￥0.00"
+                    android:textColor="@color/shoppingcar_totle_money_col"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shoppingcar_discount"
+                    android:textColor="@color/shoppingcar_bottom_tv_col"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="￥0.00"
+                    android:textColor="@color/shoppingcar_bottom_tv_col"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settlement"
+            android:layout_width="@dimen/dp_132"
+            android:layout_height="match_parent"
+            android:background="@color/shoppingcar_settlement_bg_col"
+            android:gravity="center"
+            android:text="@string/shoppingcar_settlement"
+            android:textColor="@color/shoppingcar_settlement_col"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ly_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shoppingcar_collection_tv_shape"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_5"
+                android:text="收藏" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="@drawable/shoppingcar_delete_tv_shape"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_5"
+                android:text="删除"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/black_gray" />
+</LinearLayout>
